@@ -25,6 +25,8 @@
       - spring.security.user.password=kien123 : Mật khẩu cho Spring Security (nếu không có thì hệ thống sẽ tự động tạo ra một key để thay thế khi chạy)
       - logging.level.org.hibernate.SQL = DEBUG : Điều này đặt mức ghi nhật ký cho các câu lệnh SQL được Hibernate thực thi thành DEBUG. Điều này có nghĩa là Hibernate sẽ ghi lại các câu lệnh SQL ở cấp độ DEBUG, cung cấp thông tin chi tiết hơn về các truy vấn SQL đang được thực thi.
       - logging.level.org.hibernate.Type = TRACE : Điều này đặt mức ghi nhật ký cho các loại Hibernate thành TRACE. Các kiểu ngủ đông xử lý cách các kiểu Java được ánh xạ tới các kiểu cơ sở dữ liệu. Đặt nó thành TRACE có nghĩa là ghi nhật ký chi tiết hơn cho các hoạt động liên quan.
+## Các ảnh chụp Postman để xác mình API      
+  
 
 
 
