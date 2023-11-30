@@ -2,6 +2,7 @@ package com.example.midterm.controller;
 
 import com.example.midterm.model.Product;
 import com.example.midterm.service.ProductService;
+import jakarta.annotation.PostConstruct;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -17,6 +18,11 @@ import java.util.List;
 public class ProductController {
     @Autowired
     private ProductService productService;
+
+    @PostConstruct
+    public void seedingData(){
+        productService.initDB();
+    }
 
     @PostMapping("/save")
     public ResponseEntity<Product> saveProduct(HttpServletRequest request) throws IOException {

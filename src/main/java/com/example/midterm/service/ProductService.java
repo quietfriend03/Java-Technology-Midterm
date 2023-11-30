@@ -15,4 +15,5 @@ public interface ProductService {
     List<Product> getProductsByColor(Product.Color color);
     List<Product> getProductsByCategory(Product.Category category);
     List<Product> getProductSortedByPrice(boolean asc);
+    void initDB();
 }

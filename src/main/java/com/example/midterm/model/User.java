@@ -7,22 +7,23 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Table(name = "users", uniqueConstraints = @UniqueConstraint(columnNames = "email"))
+@Table(name = "users")
 @AllArgsConstructor
 @NoArgsConstructor
 @Setter
 @Getter
 public class User {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String username;
-    private String email;
+    private String fullname;
     private String password;
 
-    public User(String username, String email, String password){
+    public User(String username, String fullname, String password){
+        super();
         this.setUsername(username);
-        this.setEmail(email);
+        this.setFullname(fullname);
         this.setPassword(password);
     }
 }

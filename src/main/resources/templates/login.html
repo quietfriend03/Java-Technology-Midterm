@@ -14,15 +14,15 @@
           th:action="@{/login}"
           method="POST"
     >
-        <label for="username">Email:</label>
-        <input type="text" id="username" name="username" placeholder="Enter your email" required>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username" required>
 
         <label for="password">Password:</label>
         <input type="password" id="password" name="password" placeholder="Enter your password" required>
 
         <input type="submit" value="Login">
 
-        <p> Don't have account <a th:href="@{/register}">Register Now </a></p>
+        <p> Don't have account <a th:href="@{/registration}">Register Now </a></p>
     </form>
 </div>
 </body>

@@ -6,6 +6,9 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Entity
 @Table(name = "product")
 @Getter
@@ -34,17 +37,18 @@ public class Product {
     @Column(nullable = false)
     private Color color;
 
+    @OneToMany(mappedBy = "product")
+    private List<CartItem> cartItems = new ArrayList<>();
+
     public enum Category {
         Phone,
         Tablet,
-        Headset,
-        Keyboard
     }
 
     public enum Color {
         Black,
         Pink,
-        BLue,
+        Blue,
         Red,
     }
 }
