@@ -1,4 +1,4 @@
-# Java-Technology-Midterm
+# Đồ án giữa kì môn Công nghệ Java
 ## Giải thích dự án
 - Dự án được thực hiện với tiêu chí xây dựng một trang web bán hàng online
 - Dự án hiện đang được thực hiện dựa trển ngôn ngữ Java và Spring framwork, ngoài ra dự án còn được xây dựng dựa trên cấu trúc Reposiotry Pattern
